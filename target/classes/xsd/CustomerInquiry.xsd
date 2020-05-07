@@ -1,0 +1,21 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.ardikapras.me/customerInquiry"
+           targetNamespace="http://www.ardikapras.me/customerInquiry" elementFormDefault="qualified">
+
+    <xs:element name="CustInqReq">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="idNo" type="xs:string"/>
+                <xs:element name="idType" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="CustInqResp">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="result" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
